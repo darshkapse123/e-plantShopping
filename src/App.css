@@ -1,0 +1,60 @@
+.background-image {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1600');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-content {
+  color: white;
+  padding: 30px;
+}
+
+.landing-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.landing-content p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.landing-content button {
+  background-color: #287a40;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 7px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.landing-content button:hover {
+  background-color: #174d2b;
+}
+
+.landing-content a {
+  color: white;
+  margin: 10px;
+}
+
+.about-us-container {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  line-height: 1.7;
+}
