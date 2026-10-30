@@ -1,36 +1,20 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.landing-page {
-  min-height: 100vh;
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e");
+/* Landing page background */
+.background-image {
+  background-image: url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+  min-height: 100vh;
+  width: 100%;
 }
 
-.landing-content {
-  padding: 30px;
+/* General page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.landing-content h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.landing-content p {
-  font-size: 20px;
+button {
+  cursor: pointer;
 }
