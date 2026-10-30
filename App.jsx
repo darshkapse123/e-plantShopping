@@ -1,23 +1,22 @@
 
-import React from 'react';
+import React, { useState } from 'react';
+import ProductList from './ProductList';
 import './App.css';
 
 function App() {
-  const handleGetStarted = () => {
-    window.location.href = '#plants';
-  };
+  const [showProducts, setShowProducts] = useState(false);
+
+  if (showProducts) {
+    return <ProductList />;
+  }
 
   return (
-    <div className="landing-page">
+    <div className="background-image">
       <div className="landing-content">
         <h1>Welcome to Paradise Nursery</h1>
+        <p>Bring nature home with our beautiful collection of plants.</p>
 
-        <p>
-          Bring nature home! Discover beautiful indoor plants
-          and make your living space greener.
-        </p>
-
-        <button onClick={handleGetStarted}>
+        <button onClick={() => setShowProducts(true)}>
           Get Started
         </button>
       </div>
